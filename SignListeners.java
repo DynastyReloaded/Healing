@@ -24,14 +24,13 @@ public class SignListeners implements Listener{
 		}
 	}
 	
-	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void onPlayerInteract(PlayerInteractEvent e){
 		if(!(e.getAction() == Action.RIGHT_CLICK_BLOCK)) return;
 		if(e.getClickedBlock().getState() instanceof Sign){
 			Sign sign = (Sign) e.getClickedBlock().getState();
 			if(sign.getLine(0).equalsIgnoreCase("§a [Heal]")){
-				e.getPlayer().setHealth(20);
+				e.getPlayer().setHealth(20.0);
 				e.getPlayer().sendMessage(ChatColor.GREEN + " You have been healed!");
 			}
 			if(sign.getLine(0).equalsIgnoreCase("§a [Feed]")){
