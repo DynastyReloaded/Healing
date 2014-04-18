@@ -1,4 +1,5 @@
 Healing
 =======
 
-How to make a healing plugin
+How to make your healing plugin as shown by DynastyReloaded!
+http://www.youtube.com/user/DynastyReloaded
